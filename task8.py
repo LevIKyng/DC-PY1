@@ -7,8 +7,8 @@ month = 0  # количество месяцев, которое можно пр
 difference = salary - spend
 
 while money_capital + difference >= spend:
+    spend += spend * increase
     money_capital += difference
-    spend = spend + spend * increase
     month += 1
 
 print(month)
