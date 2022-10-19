@@ -1,8 +1,7 @@
 src = not False and True or False and not True
 
-src = True and True and True
-src = True
-
-result = src
+result = True and True or False and True
+result = True or False
+result = True
 
 print(src == result)
