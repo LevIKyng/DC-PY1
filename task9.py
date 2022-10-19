@@ -8,8 +8,8 @@ need_money = 0  # количество денег, чтобы прожить 10 
 i = 0
 while i <= months-1:
     need_money += spend - salary
-    spend *= 1.03
+    spend = spend + spend * increase
     i += 1
-    need_money= round(need_money)
 
+need_money = round(need_money)
 print(need_money)
