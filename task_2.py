@@ -22,7 +22,7 @@ def get_symbols(dict_new):
     total_count = sum(dict_new.values())
     last_dict = {}
     for count in dict_new:
-        last_dict[count] = dict_new[count]/total_count * 100
+        last_dict[count] = round(dict_new[count]/total_count * 100, 2)
     return last_dict
 
 final_str = get_symbols(dict_new)
